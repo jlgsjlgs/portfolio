@@ -13,6 +13,10 @@ export default function NavBar() {
             About
           </a>
 
+          <a href="#background" className="text-slate-300 hover:text-white">
+            Background
+          </a>
+
           <a href="#contact" className="text-slate-300 hover:text-white">
             Contact
           </a>
