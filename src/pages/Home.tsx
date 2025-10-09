@@ -1,9 +1,21 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import NavBar from "../components/NavBar"
 import TypingAnimation from "../components/TypingAnimation"
 import About from "../components/About"
 import Background from "../components/Background"
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      setTimeout(() => {
+        document.getElementById(location.state.scrollTo)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <div>
       <NavBar/>
@@ -21,5 +33,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
