@@ -12,6 +12,7 @@ function Home() {
     if (location.state?.scrollTo) {
       setTimeout(() => {
         document.getElementById(location.state.scrollTo)?.scrollIntoView({ behavior: 'smooth' });
+        window.history.replaceState({}, document.title);
       }, 100);
     }
   }, [location]);
