@@ -13,6 +13,7 @@ function Home() {
       <section id="about">
           <About/>
       </section>
+      <div className="h-px bg-slate-700 mx-auto w-3/4"></div>
     </div>
   );
 }
