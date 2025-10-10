@@ -14,33 +14,33 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-slate-900 z-50 px-6 py-4">
+    <nav className="fixed top-0 w-full bg-slate-900 z-50 px-4 sm:px-6 py-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           onClick={(e) => handleSectionClick(e, 'home')}
-          className="text-slate-300 hover:text-white"
+          className="text-slate-300 hover:text-white text-sm sm:text-base"
         >
           Home
         </a>
        
-        <div className="flex gap-6">
-          <a 
-            href="#about" 
+        <div className="flex gap-3 sm:gap-6">
+          <a
+            href="#about"
             onClick={(e) => handleSectionClick(e, 'about')}
-            className="text-slate-300 hover:text-white"
+            className="text-slate-300 hover:text-white text-sm sm:text-base"
           >
             About
           </a>
-          <a 
-            href="#background" 
+          <a
+            href="#background"
             onClick={(e) => handleSectionClick(e, 'background')}
-            className="text-slate-300 hover:text-white"
+            className="text-slate-300 hover:text-white text-sm sm:text-base"
           >
             Background
           </a>
          
-          <Link to="/projects" className="text-slate-300 hover:text-white">
+          <Link to="/projects" className="text-slate-300 hover:text-white text-sm sm:text-base">
             Projects
           </Link>
         </div>

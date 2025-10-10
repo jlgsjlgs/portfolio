@@ -18,13 +18,13 @@ export default function TypingAnimation() {
   }, [charIndex, fullText]);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-slate-900">
-      <div className="text-center px-4">
-        <h1 className="text-5xl font-bold text-white mb-4 min-w-max">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 px-4">
+      <div className="text-center w-full">
+        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 break-words">
           {text}
           <span className="animate-pulse">|</span>
         </h1>
-        <p className="text-slate-400 text-lg">Software Engineer</p>
+        <p className="text-slate-400 text-sm sm:text-base md:text-lg">Software Engineer</p>
       </div>
     </div>
   );
