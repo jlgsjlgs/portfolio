@@ -1,6 +1,10 @@
+[![Deploy to GitHub Pages](https://github.com/jlgsjlgs/portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/jlgsjlgs/portfolio/actions/workflows/main.yml)
+
 # Portfolio Website
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.  
+
+**Visit the live site:** [https://jlgsjlgs.github.io/portfolio/](https://jlgsjlgs.github.io/portfolio/)
 
 ## 🚀 Features
 
@@ -28,24 +32,22 @@ cd portfolio
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Run the development server:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 4. Build for production:
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## 🌐 Deployment
 
 This site is automatically deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the main branch.
-
-Visit the live site at: `https://yourusername.github.io/portfolio/`
 
 ## 📝 Customization
 
