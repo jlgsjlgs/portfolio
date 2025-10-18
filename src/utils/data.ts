@@ -81,7 +81,7 @@ export const backgroundData: BackgroundData = {
       technologies: ["React", "Express.js", "Spring Boot", "TypeScript", "Java", "PostgreSQL", "Redis", "Docker", "Kubernetes", "Helm", "Azure Maps"]
     },
     {
-      role: "Software Engineer Intern",
+      role: "Software Engineer (Freelance)",
       duration: "June 2023 - Aug 2023",
       description: `Developed a full-stack web application to manage inventory and sales tracking with complete CRUD operations. 
                     Implemented an automated invoice generation system that dynamically populated templates with transaction data, enabling seamless PDF export for client records.`,
