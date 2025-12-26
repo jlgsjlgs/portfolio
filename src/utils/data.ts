@@ -86,7 +86,7 @@ export const backgroundData: BackgroundData = {
       description: `Developed a full-stack web application to manage inventory and sales tracking with complete CRUD operations. 
                     Implemented an automated invoice generation system that dynamically populated templates with transaction data, enabling seamless PDF export for client records.`,
       technologies: ["React", "Express.js", "PostgreSQL"]
-    },
+    }, 
     {
       role: "Software Engineer Intern",
       duration: "Jan 2023 - May 2023",
@@ -98,6 +98,13 @@ export const backgroundData: BackgroundData = {
 }
 
 export const projectsData: Project[] = [
+  {
+    title: "HowMuchAh",
+    description: "A full-stack expense splitting application inspired by Splitwise, featuring automated debt settlement using a greedy algorithm to minimize transactions. Built with React TypeScript and Spring Boot, it includes real-time WebSocket notifications, mobile-first responsive design, and secure JWT authentication via Supabase. Deployed on Vercel and Railway with PostgreSQL database integration.",
+    technologies: ["React", "Spring Boot", "PostgreSQL", "Vercel", "Railway", "Supabase"],
+    github: "https://github.com/jlgsjlgs/HowMuchAh",
+    link: "https://howmuchah.vercel.app/"
+  },
   {
     title: "Telegram Budget Bot",
     description: "A serverless Telegram bot that automates personal expense tracking by logging transactions directly into Google Sheets. Built with TypeScript, Cloudflare Workers, and Google Apps Script, it features secure authentication, automatic monthly sheet generation, and real-time confirmation messages. The bot is deployed via a CI/CD pipeline using GitHub Actions for seamless updates.",
