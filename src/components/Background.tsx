@@ -20,6 +20,20 @@ export default function Background() {
           </div>
         </div>
 
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8">Certifications</h2>
+          <div className="space-y-6">
+            {backgroundData.certifications.map((cert, index) => (
+              <div key={index} className="border-l-2 border-slate-700 pl-6">
+                <h3 className="text-xl font-semibold text-white">
+                  {cert.name}
+                </h3>
+                <p className="text-slate-500 text-sm">{cert.year}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div>
           <h2 className="text-3xl font-bold text-white mb-8">Work Experience</h2>
           <div className="space-y-8">

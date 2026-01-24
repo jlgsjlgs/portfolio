@@ -12,6 +12,11 @@ export interface Education {
   duration: string;
 }
 
+export interface Certification {
+  name: string;
+  year: string;
+}
+
 export interface WorkExperience {
   role: string;
   duration: string;
@@ -21,6 +26,7 @@ export interface WorkExperience {
 
 export interface BackgroundData {
   education: Education[];
+  certifications: Certification[];
   workExperience: WorkExperience[];
 }
 
@@ -38,28 +44,24 @@ export const aboutData: AboutData = {
                 What drives me most is curiosity, the excitement of learning something new and turning that knowledge into meaningful, useful outcomes.`,
     skillCategories: [
     {
-      category: "Frontend Development",
-      skills: ["React", "Next.js", "Tailwind CSS"]
-    },
-    {
-      category: "Backend Development",
-      skills: ["Node.js", "Express.js", "Spring Boot", "Flask", "FastAPI"]
-    },
-    {
       category: "Languages",
       skills: ["Python", "Java", "JavaScript", "TypeScript"]
     },
     {
+      category: "Frameworks",
+      skills: ["React", "Next.js", "Tailwind CSS", "Express.js", "Spring Boot", "Flask", "FastAPI", "LangChain"]
+    },
+    {
       category: "Databases",
-      skills: ["PostgreSQL", "MongoDB", "Chroma DB", "Pinecone", "Azure Cosmos DB"]
+      skills: ["PostgreSQL", "PostGIS", "MongoDB", "Redis", "Azure Cosmos DB", "Chroma DB", "Pinecone"]
     },
     {
       category: "Cloud & DevOps",
-      skills: ["Docker", "Kubernetes", "Helm", "Git", "Nginx", "AWS", "Azure"]
+      skills: ["AWS", "Azure", "Cloudflare Workers", "Supabase", "Docker", "Kubernetes", "Helm", "Nginx"]
     },
     {
-      category: "Testing & Automation",
-      skills: ["Selenium", "Jest", "Mocha", "Artillery"]
+      category: "Tools & Testing",
+      skills: ["Git", "GitLab CI/CD", "GitHub Actions", "Maven", "Selenium", "Jest", "JUnit", "Mocha", "Artillery"]
     },
   ]
 };
@@ -72,20 +74,26 @@ export const backgroundData: BackgroundData = {
       duration: "2020 - 2024",
     },
   ],
+  certifications: [
+    {
+      name: "AWS Certified Cloud Practitioner (CLF-C02)",
+      year: "2026"
+    }
+  ],
   workExperience: [
     {
       role: "Software Engineer",
       duration: "July 2025 - Present",
-      description: `Developed full-stack web application in an Agile environment, aggregating and processing telemetry data from multiple sources. 
-                    Built scalable backend microservices and responsive frontend interfaces to handle real-time data visualization and analysis, improving system performance and user experience.`,
+      description: `Architected and developed a full-stack telemetry platform with microservices handling real-time data aggregation,
+                    visualization, and alert management using React, Express.js, Spring Boot, PostgreSQL, and Azure Maps`,
       technologies: ["React", "Express.js", "Spring Boot", "TypeScript", "Java", "PostgreSQL", "Redis", "Docker", "Kubernetes", "Helm", "Azure Maps"]
     },
     {
       role: "Software Engineer Intern",
       duration: "Jan 2023 - May 2023",
-      description: `Developed and enhanced web application features to route and process customer-submitted data, improving efficiency and reliability. 
-                    Built automated testing workflows and integrated them into CI/CD pipelines, while contributing to cloud observability upgrades and enhancements to internal web tools that streamlined stakeholder workflows.`,
-      technologies: ["Next.js", "React", "Express.js", "AWS", "MongoDB", "Selenium", "Mocha", "Docker", "AWS CloudWatch", "AWS Lambda"]
+      description: `Developed internal data routing platform using Next.js and Express.js, processing 1,000+ daily customer
+                    submissions and directing data flows to appropriate departmental endpoints`,
+      technologies: ["Next.js", "React", "Express.js", "AWS SQS", "MongoDB", "Selenium", "Mocha", "Docker", "AWS CloudWatch", "AWS Lambda"]
     },
   ]
 }
@@ -94,7 +102,7 @@ export const projectsData: Project[] = [
   {
     title: "HowMuchAh",
     description: "A full-stack expense splitting application inspired by Splitwise, featuring automated debt settlement using a greedy algorithm to minimize transactions. Built with React TypeScript and Spring Boot, it includes real-time WebSocket notifications, mobile-first responsive design, and secure JWT authentication via Supabase. Deployed on Vercel and Railway with PostgreSQL database integration.",
-    technologies: ["React", "Spring Boot", "PostgreSQL", "Vercel", "Railway", "Supabase"],
+    technologies: ["React", "Spring Boot", "PostgreSQL", "Supabase", "Docker", "Vercel", "Railway"],
     github: "https://github.com/jlgsjlgs/HowMuchAh",
     link: "https://howmuchah.vercel.app/"
   },
@@ -107,7 +115,7 @@ export const projectsData: Project[] = [
   {
     title: "Retrieval-Augmented Generation (RAG) AI Chatbot",
     description: "An AI-powered chatbot that understands and responds based on user-uploaded documents. It features a ReactJS frontend and microservices backend with Python and Node.js. The system uses LangChain for document embedding, Azure CosmosDB for vector storage, and provides contextual LLM-driven responses.",
-    technologies: ["React", "Express.js", "Flask", "LangChain", "MongoDB", "Azure CosmosDB"],
+    technologies: ["React", "Express.js", "Flask", "LangChain", "MongoDB", "Azure Cosmos DB", "Chroma DB", "Pinecone"],
     github: "https://github.com/jlgsjlgs/RAG-Chatbot"
   },
   {
