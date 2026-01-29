@@ -57,11 +57,11 @@ export const aboutData: AboutData = {
     },
     {
       category: "Cloud & DevOps",
-      skills: ["AWS", "Azure", "Cloudflare Workers", "Supabase", "Docker", "Kubernetes", "Helm", "Nginx"]
+      skills: ["AWS", "Azure", "Cloudflare Workers", "Supabase", "Docker", "Kubernetes", "Helm", "Nginx", "GitLab CI/CD", "GitHub Actions",]
     },
     {
       category: "Tools & Testing",
-      skills: ["Git", "GitLab CI/CD", "GitHub Actions", "Maven", "Selenium", "Jest", "JUnit", "Mocha", "Artillery"]
+      skills: ["Git", "Selenium", "Jest", "JUnit", "Mocha", "Artillery"]
     },
   ]
 };
