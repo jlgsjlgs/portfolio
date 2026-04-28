@@ -76,6 +76,10 @@ export const backgroundData: BackgroundData = {
   ],
   certifications: [
     {
+      name: "AWS Certified Solutions Architect - Associate (SAA-C03)",
+      year: "2026"
+    },
+    {
       name: "AWS Certified Cloud Practitioner (CLF-C02)",
       year: "2026"
     }
