@@ -1,0 +1,11 @@
+services:
+  portfolio:
+    container_name: portfolio
+    image: ghcr.io/jlgsjlgs/portfolio:latest
+    networks:
+      - caddy
+    restart: unless-stopped
+
+networks:
+  caddy:
+    external: true
