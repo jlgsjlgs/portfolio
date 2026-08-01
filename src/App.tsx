@@ -3,10 +3,8 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 
 function App() {
-  const basename = import.meta.env.MODE === 'production' ? '/portfolio' : '';
-  
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

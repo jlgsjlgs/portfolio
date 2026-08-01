@@ -59,3 +59,4 @@ jobs:
             docker pull ghcr.io/jlgsjlgs/portfolio:latest
             cd ~/containers/portfolio
             docker compose up -d --force-recreate
+            docker image prune -f
